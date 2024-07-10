@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+}
+
+body {
+    background-color: #080808;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    height: 100vh; 
+    background-image: url("/images/bat.jpg");
+    background-size:cover;
+    background-position: left;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left: 30px;
+}
+
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+.header-text h1 span{
+    color:#d62828;
+}
+
+/* about */
+
+.about{
+    padding: 80px;
+    color: #ababab;
+}
+
+.about .col-6 h1{
+    text-align: center;
+    font-size: 60px;
+    color: #d62828;
+}
+
+.container .row .col-6 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about .col-6 p{
+    text-align: justify;
+}
+
+.about .details{
+    display:flex;
+    
+}
+
+.about .details p{
+    font-size: 20px;
+    margin-right: 15px;
+    color: #d4a373;
+}
+
+
+
