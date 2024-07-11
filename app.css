@@ -1,7 +1,7 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: "Open Sans",sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -11,37 +11,38 @@ body {
 
 .header {
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     background-image: url("./images/bat-bk.png");
-    background-size:cover;
+    background-size: cover;
     background-position: left;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin: 0 30px;
-    
+
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-    
+    transform: translateY(-20px);
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     position: relative;
     font-weight: 500;
+
 }
 
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -52,54 +53,55 @@ nav ul li a::after{
     transition: 0.5s;
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after {
     width: 100%;
 }
 
-.header-text{
+.header-text {
     font-size: 30px;
     margin-top: 10%;
     margin-left: 30px;
+    transform: translateY(40px);
 }
 
-.header-text h1{
+.header-text h1 {
     margin-top: 20px;
     font-size: 60px;
 }
 
-.header-text h1 span{
-    color:#eb5e28;
+.header-text h1 span {
+    color: #eb5e28;
 }
 
-/* about */
+/* -----------------------about---------------------------------------- */
 
-.about{
+.about {
     padding: 80px;
     color: #ababab;
 }
 
-.about .col-6 h1{
+.about .col-6 h1 {
     text-align: center;
     font-size: 60px;
-    color: #d62828;
+    color: #edede9;
 }
 
-.container .row .col-6 img{
+.container .row .col-6 img {
     width: 100%;
     border-radius: 15px;
 }
 
-.about .col-6 p{
+.about .col-6 p {
     text-align: justify;
     font-size: medium;
 }
 
-.about .details{
-    display:flex;
-    
+.about .details {
+    display: flex;
+
 }
 
-.about .details p{
+.about .details p {
     font-size: 20px;
     margin-right: 20px;
     color: #d4a373;
@@ -108,7 +110,7 @@ nav ul li a:hover::after{
     position: relative;
 }
 
-.about .tab-details::after{
+.about .tab-details::after {
     content: '';
     width: 0;
     height: 3px;
@@ -119,26 +121,67 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 
-.about .tab-details.active-link::after{
+.about .tab-details.active-link::after {
     width: 100%;
 }
 
-.about .tab-contents ul li{
+.about .tab-contents ul li {
     margin: 10px 0;
     list-style: none;
     transform: translateX(-25px);
-    
+
 }
 
-.about .tab-contents ul li span{
+.about .tab-contents ul li span {
     font-size: 14px;
 }
 
-.tab-contents{
+.tab-contents {
     display: none;
 }
 
-.tab-contents.active-tab{
+.tab-contents.active-tab {
     display: block;
 }
 
+/* ----------------- Services ----------------------- */
+
+.my-services-heading {
+    text-align: center;
+    color: #f2e8cf;
+}
+
+.services {
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+}
+
+.services div {
+    text-align: justify;
+    padding: 30px;
+    background: #353535;
+    border-radius: 15px;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+/* /* .services div h2 {
+    text-align: center;
+} */
+
+.services div i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.services div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.services div:hover {
+    background-color: #284b63;
+    transform: translateY(-15px);
+}
