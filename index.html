@@ -34,7 +34,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <img src="images/profile.png">
+                    <img src="./images/profile.png">
                 </div>
                 <div class="col-6">
                     <h1>About Me</h1>
@@ -42,9 +42,28 @@
                         Hello! My name is Hari Krishna, and I am a dedicated software developer. I specialize in several programming languages and technologies, including Python, HTML, CSS, JavaScript, and SQL. In addition to my passion for coding, I enjoy video editing, which allows me to express my creativity in a different medium. I'm always excited to take on new challenges and collaborate on innovative projects.
                     </p>
                     <div class="details">
-                        <p class="tab-details">Skills</p>
-                        <p class="tab-details">Experience</p>
-                        <p class="tab-details">Education</p>
+                        <p class="tab-details active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-details" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-details" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Python</li>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>SQL</li>
+                            <li>Video Editing (coming soon <span>&#128521</span>)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>Pronix IT Solutions <br><span>2024 - Present</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Vardhaman College of Engineering <br><span>2020 - 2024</span></li>
+                            <li>Delta Junior College <br><span>2018 - 2020</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
