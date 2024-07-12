@@ -144,10 +144,7 @@ nav ul li a:hover::after {
 }
 
 /* ----------------- Services ----------------------- */
-.my-services-heading {
-    text-align: center;
-    color: #f2e8cf;
-}
+
 
 .services {
     margin: 40px 0;
@@ -181,7 +178,7 @@ nav ul li a:hover::after {
 }
 
 /* ------------------- portfolio --------------------------- */
-.portfolio-heading {
+.heading {
     text-align: center;
     padding-top: 30px;
     color: #f2e8cf;
@@ -218,3 +215,5 @@ nav ul li a:hover::after {
     background-color: #284b63;
     transform: translateY(-15px);
 }
+
+/* ------------- Contact Me---------------- */
