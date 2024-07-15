@@ -176,7 +176,8 @@
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="name" placeholder="your name" class="input_name" required>
-                        <input type="email" name="email" placeholder="your email" class="input_email" required>
+                        <input type="email" name="email" placeholder="your email" class="input_email"
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
                         <textarea name="message" rows="6" placeholder="your message" class="input_text"></textarea>
                         <button type="submit">Submit</button><br><br>
                         <span id="span"></span>
