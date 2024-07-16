@@ -17,13 +17,14 @@ body {
     background-position: left;
 }
 
+
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin: 0 30px;
-
 }
 
 nav ul li {
@@ -97,7 +98,6 @@ nav ul li a:hover::after {
 
 .about .details {
     display: flex;
-
 }
 
 .about .details p {
@@ -305,17 +305,81 @@ form button {
 }
 
 /* -----resposive website---------- */
+.fa-solid.fa-xmark,
+.fa-solid.fa-bars {
+    display: none;
+}
+
 @media only screen and (max-width:600px) {
     #header {
         background-image: url('./images/mobile.png');
     }
 
     .header-text {
-        margin-top: 30%;
+        margin-top: 100%;
         font-size: 16px;
     }
 
     .header-text h1 {
         font-size: 30px;
     }
+
+    nav img {
+        height: 70px;
+    }
+
+    .fa-solid.fa-xmark,
+    .fa-solid.fa-bars {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background-color: #284b63;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 240px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right;
+    }
+
+    nav ul li {
+        display: block;
+        margin-inline: auto;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 12px;
+        left: 50px;
+        cursor: pointer;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    .about .container .row {
+        display: block;
+    }
+
+    .about .row .col-6 {
+        width: 100%;
+    }
+
+    .about .col-6 h1 {
+        font-size: 30px;
+    }
+
+}
+
+.special-container {
+    width: 100%;
 }

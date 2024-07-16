@@ -27,7 +27,7 @@ function openTab(type) {
 // })
 const sidemenu = document.getElementById('sidemenu');
 function closeMenu() {
-    sidemenu.style.right = "-300px";
+    sidemenu.style.right = "-240px";
 }
 function openMenu() {
     sidemenu.style.right = '0';
