@@ -25,10 +25,10 @@ function openTab(type) {
 //     document.querySelector('#span').style.display = 'block';
 //     console.log('hello')
 // })
-// const sidemenu = document.getElementById('sidemenu');
-// function closeMenu() {
-//     sidemenu.style.right = "-300px";
-// }
-// function openMenu() {
-//     sidemenu.style.right = '0';
-// }
+const sidemenu = document.getElementById('sidemenu');
+function closeMenu() {
+    sidemenu.style.right = "-300px";
+}
+function openMenu() {
+    sidemenu.style.right = '0';
+}
