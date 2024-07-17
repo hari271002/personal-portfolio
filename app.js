@@ -1,4 +1,5 @@
 // about section 
+// about section 
 
 var tabDetails = document.getElementsByClassName('tab-details');
 var tabContents = document.getElementsByClassName('tab-contents');
