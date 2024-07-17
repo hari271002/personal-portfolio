@@ -298,87 +298,8 @@ form button {
     border-radius: 8px;
 }
 
-/* -----resposive website---------- */
-.fa-solid.fa-circle-xmark {
-    display: none;
-}
-
-.fa-solid.fa-bars {
-    display: none;
-}
-
 #span {
     font-size: 15px;
     color: #ababab;
     display: block;
 }
-
-/* @media only screen and (max-width:600px) {
-    .header {
-        background-image: url(./images/mobile1-bk.png);
-    }
-
-    .header-text {
-        margin-top: 50%;
-        font-size: 16px;
-    }
-
-    nav img {
-        height: 120px;
-    }
-
-    .header-text h1 {
-        font-size: 30px;
-    }
-
-    nav .fa-solid {
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul {
-        background-color: #284b63;
-        top: 0;
-        right: -300px;
-        position: fixed;
-        width: 300px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 1s;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 20px;
-        margin-left: 5px;
-    }
-
-    nav ul .fa-solid {
-        position: absolute;
-        top: 15px;
-        left: 45px;
-        cursor: pointer;
-    }
-
-    nav .fa-solid.fa-bars {
-        margin-right: 25px;
-    }
-
-    .about .container .row {
-        display: inline-block;
-    }
-
-    .about .container .row img {
-
-        width: 150px;
-        height: 270px;
-    }
-
-    .about .col-6 h1 {
-        text-align: left;
-        font-size: 30px;
-        color: #edede9;
-        margin-inline: auto;
-    }
-} */
